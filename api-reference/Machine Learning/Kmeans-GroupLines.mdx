@@ -1,25 +1,36 @@
 ---
 title: 'Kmeans - GroupLines'
 description: '
-Constructs polygons from a set of lines that form closed loops. This operation is useful for converting linework into area-based geometries.
-' 
+But what happens when we don’t know the distances between geometries, or when those distances vary? In this scenario, K-Means can be used much like DBSCAN -except that you simply define how many clusters you want. It’s also one of the easiest ways to deal with a messy .dwg file.-
+
+
+K-means is possible to group geometry , relying solely on the density, spatial continuity, and neighborhood relationships of the existing points.
+
+
+What makes this approach powerful:
+
+- Linear arrangements and disconnected areas naturally separate themselves
+
+- The grouping logic remains intact even when the plan is revised
+
+
+This is not a scheme forced by rules, but an organization learned directly from the space itself.' 
 ---
+
+
 
 
 ### An example of transformations
 
-<a href="/images/Shp_Polygonise.png" target="_blank">
+<a href="/images/Kmeans-GroupLines-3D.png" target="_blank">
   
-    <img src="/images/Shp_Polygonise.png" className="pointer-events-none" 
+    <img src="/images/Kmeans-GroupLines-3D.png" className="pointer-events-none" 
     style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
 </a>
 
-### An example of test
+<a href="/images/Kmeans-GroupLines.png" target="_blank">
+  
+    <img src="/images/Kmeans-GroupLines.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>
 
-<Frame>
-  <a href="https://github.com/DurmusCesur/docs/releases/download/Dyn/Shp_Polygonise.dyn" download="Shp_Polygonise.dyn">
-      <button className="bg-[#16A34A] text-white px-5 py-1 rounded-md hover:bg-[#15803D] transition-colors">
-        Shp_Polygonise.dyn
-      </button>
-  </a>
-</Frame>

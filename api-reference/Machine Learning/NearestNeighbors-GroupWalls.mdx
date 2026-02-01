@@ -1,25 +1,43 @@
 ---
 title: 'NearestNeighbors - GroupWalls'
 description: '
-Aligns the corner points of one geometry with the corners of another geometry within a specified tolerance distance. This process is used to eliminate small gaps or misalignments between geometries.
+ When you don’t know the exact distances between geometries and all you want is to find the geometries that are adjacent to a given reference, classical clustering methods such as K-Means or DBSCAN may not always be the right tools. What we actually need to look at is simply the “adjacency relationships.”
+
+
+By using NearestNeighbors, it is possible to group geometries by directly querying spatial proximity. Given a set of reference geometries, it identifies only the surrounding geometries—without relying on a fixed distance threshold or a predefined clustering logic.
+
+
+What makes this approach powerful:
+
+- Linear arrangements and disconnected regions are naturally separated.
+
+- The grouping logic remains consistent even when the layout changes.
+
+- No assumptions are required about scale or spacing.
+
+
+This is not a rule-based scheme imposed from the outside.
+ It is an organization learned directly from spatial relationships.
 ' 
 ---
 
 
 ### An example of transformations
 
-<a href="/images/Shp_Snap.png" target="_blank">
+<a href="/images/NearestNeighbors-GroupWalls-rvt.png" target="_blank">
   
-    <img src="/images/Shp_Snap.png" className="pointer-events-none" 
+    <img src="/images/NearestNeighbors-GroupWalls-rvt.png" className="pointer-events-none" 
     style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
 </a>
 
-### An example of test
+<a href="/images/NearestNeighbors-GroupWalls-dyn.png" target="_blank">
+  
+    <img src="/images/NearestNeighbors-GroupWalls-dyn.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>
 
-<Frame>
-  <a href="https://github.com/DurmusCesur/docs/releases/download/Dyn/Shp_Snap.dyn" download="Shp_Snap.dyn">
-      <button className="bg-[#16A34A] text-white px-5 py-1 rounded-md hover:bg-[#15803D] transition-colors">
-        Shp_Snap.dyn
-      </button>
-  </a>
-</Frame>
+<a href="/images/NearestNeighbors-GroupWalls-3D.png" target="_blank">
+  
+    <img src="/images/NearestNeighbors-GroupWalls-3D.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>

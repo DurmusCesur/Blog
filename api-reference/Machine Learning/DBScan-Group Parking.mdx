@@ -1,52 +1,37 @@
 ---
 title: 'DBScan - Group Parking'
 description: '
-A shapely buffer creates a new geometry extended by a specified +/- distance around a geometry (point, line or polygon). This operation adds a buffer zone around the geometry based on the given distance. 
+It is possible to group parking spaces in a plan without any predefined data, relying solely on the density, spatial continuity, and neighborhood relationships of the existing points.
 
+
+
+What makes this approach powerful:
+
+- Linear arrangements and disconnected areas naturally separate themselves
+
+- The grouping logic remains intact even when the plan is revised
+
+
+This is not a scheme forced by rules, but an organization learned directly from the space itself. 
 ' 
 ---
 
-<Note>
-3 Style [ Round, Mitre, Bevel ]
-
-
-'1' : **Round**
-<a href="/images/Shp_Buffer-Round.png" target="_blank">
-  
-    <img src="/images/Shp_Buffer-Round.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
-
-'2' : **Mitre**
-<a href="/images/Shp_Buffer-Mitre.png" target="_blank">
-  
-    <img src="/images/Shp_Buffer-Mitre.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
-
-'3' : **Bevel**
-<a href="/images/Shp_Buffer-Bevel.png" target="_blank">
-  
-    <img src="/images/Shp_Buffer-Bevel.png" className="pointer-events-none" 
-    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
-</a>
-
-</Note>
-
 ### An example of transformations
 
-<a href="/images/Shp_Buffer.png" target="_blank">
+<a href="/images/parking.png" target="_blank">
   
-    <img src="/images/Shp_Buffer.png" className="pointer-events-none" 
+    <img src="/images/parking.png" className="pointer-events-none" 
     style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
 </a>
 
-### An example of test
+<a href="/images/DBScan-dyn.png" target="_blank">
+  
+    <img src="/images/DBScan-dyn.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>
 
-<Frame>
-  <a href="https://github.com/DurmusCesur/docs/releases/download/Dyn/Shp_Buffer.dyn" download="Shp_Buffer.dyn">
-      <button className="bg-[#16A34A] text-white px-5 py-1 rounded-md hover:bg-[#15803D] transition-colors">
-        Shp_Buffer.dyn
-      </button>
-  </a>
-</Frame>
+<a href="/images/DBScan-3D.png" target="_blank">
+  
+    <img src="/images/DBScan-3D.png" className="pointer-events-none" 
+    style={{ borderRadius: '0.5rem', border: '1px solid rgba(0,0,0,0.1)' }} />
+</a>
