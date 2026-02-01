@@ -19,7 +19,6 @@
               {
                 "group": "Shapely",
                 "pages": [
-                  "api-reference/Shapely/Group Lines",
                   "api-reference/Shapely/Group Walls",
                   "api-reference/Shapely/Surface Profil"
                 ]
