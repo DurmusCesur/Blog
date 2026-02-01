@@ -11,10 +11,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": " ",
         "groups": [
           {
-            "group": "Shapely Guide",
+            "group": " ",
             "pages": [
               "api-reference/introduction"
             ]
