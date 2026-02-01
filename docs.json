@@ -19,36 +19,26 @@
               {
                 "group": "Shapely",
                 "pages": [
-                  "api-reference/Shapely/Dynamo→Shapely",
-                  "api-reference/Shapely/Shapely→Dynamo",
-                  "api-reference/Shapely/Shapely→Numpy",
-                  "api-reference/Shapely/Numpy→Shapely",
-                  "api-reference/Shapely/GeoJSON→Shapely"
+                  "api-reference/Shapely/Group Lines",
+                  "api-reference/Shapely/Group Walls",
+                  "api-reference/Shapely/Surface Profil"
                 ]
               },
               {
                 "group": "Machine Learning",
                 "pages": [
-                  "api-reference/Machine Learning/Shp_Buffer",
-                  "api-reference/Machine Learning/Shp_Snap",
-                  "api-reference/Machine Learning/Shp_ConvexHull",
-                  "api-reference/Machine Learning/Shp_Triangulate",
-                  "api-reference/Machine Learning/Shp_Voronoi",
-                  "api-reference/Machine Learning/Shp_Polygonise"
+                  "api-reference/Machine Learning/DBScan-Group Parking",
+                  "api-reference/Machine Learning/NearestNeighbors-GroupWalls",
+                  "api-reference/Machine Learning/Feature Extraction-ShapelyGeometry",
+                  "api-reference/Machine Learning/Kmeans-GroupLines"
                 ]
               },
               {
                 "group": "Deep Learning",
                 "pages": [
-                  "api-reference/Deep Learning/Shp_Difference",
-                  "api-reference/Deep Learning/Shp_Intersection",
-                  "api-reference/Deep Learning/Shp_RevDifference",
-                  "api-reference/Deep Learning/Shp_Union",
-                  "api-reference/Deep Learning/Shp_Rotate",
-                  "api-reference/Deep Learning/Shp_RotateSkew",
-                  "api-reference/Deep Learning/Shp_Scale",
-                  "api-reference/Deep Learning/Shp_Offset",
-                  "api-reference/Deep Learning/Shp_Split"
+                  "api-reference/Deep Learning/Segmentation-Floors Plan",
+                  "api-reference/Deep Learning/Contour-Exterior",
+                  "api-reference/Deep Learning/Classification-Furniture"
                 ]
               }
             ]
