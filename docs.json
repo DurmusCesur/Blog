@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "palm",
+  "name": "Shapely",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -11,77 +11,95 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Shapely",
         "groups": [
           {
-            "group": "Getting started",
+            "group": " ",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "/index"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Shapely Guide",
             "pages": [
               "api-reference/introduction"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Geometry",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              {
+                "group": "Conversion",
+                "pages": [
+                  "api-reference/Conversation/Dynamo→Shapely",
+                  "api-reference/Conversation/Shapely→Dynamo",
+                  "api-reference/Conversation/Shapely→Numpy",
+                  "api-reference/Conversation/Numpy→Shapely",
+                  "api-reference/Conversation/GeoJSON→Shapely"
+                ]
+              },
+              {
+                "group": "Create",
+                "pages": [
+                  "api-reference/Create/Shp_Buffer",
+                  "api-reference/Create/Shp_Snap",
+                  "api-reference/Create/Shp_ConvexHull",
+                  "api-reference/Create/Shp_Triangulate",
+                  "api-reference/Create/Shp_Voronoi",
+                  "api-reference/Create/Shp_Polygonise"
+                ]
+              },
+              {
+                "group": "Modifier",
+                "pages": [
+                  "api-reference/Modifier/Shp_Difference",
+                  "api-reference/Modifier/Shp_Intersection",
+                  "api-reference/Modifier/Shp_RevDifference",
+                  "api-reference/Modifier/Shp_Union",
+                  "api-reference/Modifier/Shp_Rotate",
+                  "api-reference/Modifier/Shp_RotateSkew",
+                  "api-reference/Modifier/Shp_Scale",
+                  "api-reference/Modifier/Shp_Offset",
+                  "api-reference/Modifier/Shp_Split"
+                ]
+              },
+              {
+                "group": "Operation",
+                "pages": [
+                  "api-reference/Operation/Shp_Area",
+                  "api-reference/Operation/Shp_BoundingBox",
+                  "api-reference/Operation/Shp_BoundingCircle",
+                  "api-reference/Operation/Shp_Boundary",
+                  "api-reference/Operation/Shp_BuildBoundary",
+                  "api-reference/Operation/Shp_Centroid",
+                  "api-reference/Operation/Shp_Contains",
+                  "api-reference/Operation/Shp_Distance",
+                  "api-reference/Operation/Shp_GetPoint",
+                  "api-reference/Operation/Shp_LabelPoint",
+                  "api-reference/Operation/Shp_Length",
+                  "api-reference/Operation/Shp_NearestPoint",
+                  "api-reference/Operation/Shp_Oriented",
+                  "api-reference/Operation/Shp_Perimeter",
+                  "api-reference/Operation/Shp_PerimeterInterior",
+                  "api-reference/Operation/Shp_Segmentize",
+                  "api-reference/Operation/Shp_SkeletonPruning",
+                  "api-reference/Operation/Shp_SharedPaths",
+                  "api-reference/Operation/Shp_Simplify",
+                  "api-reference/Operation/Shp_ShortLine",
+                  "api-reference/Operation/Shp_Touches",
+                  "api-reference/Operation/Shp_TouchesByDistance"
+                ]
+              }
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
@@ -91,32 +109,8 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://github.com/DurmusCesur/Shapely/issues"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }
